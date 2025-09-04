@@ -1,7 +1,6 @@
 ADIM ADIM YAPACAĞINIZ İŞLEMLERİ SİZLERE ANLATIYIM ZOR BİR ŞEYİ YOKTUR SADECE ANLAMAK VE OKUMAK ÖNEMLİDİR
 
-	//////// sadece bu script itemhesap.com üzerinde satış yapılmaktadır/////
-
+	
 
 1- İNDEX.PHP DOSYASINI AÇIP "<title>SİTENİN ADI BURAYA GİRİLECEK</title>" BU KISIMDA SİTENİN ADINI DÜZENLEYECEKSİNİZ
 
