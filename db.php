@@ -1,10 +1,10 @@
 
 <?php
 // includes/db.php
-$host = "sql201.infinityfree.com";
-$user = "if0_39684345";
-$pass = "jVcA6fs4mCVrn";
-$dbname = "if0_39684345_denemecik";
+$host = "";
+$user = "";
+$pass = "";
+$dbname = "";
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass, [
