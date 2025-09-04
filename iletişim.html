@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f1724;
+            font-family: 'Arial', sans-serif;
+            color: #e6eef8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Anasayfaya Dön Butonu */
+        .home-button {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            padding: 12px 20px;
+            background: #7c5cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .home-button:hover {
+            background-color: #5a3bcc;
+            transform: translateY(-2px);
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.05);
+            padding: 50px;
+            border-radius: 20px;
+            width: 450px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #7c5cff;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background: rgba(255,255,255,0.1);
+            color: #e6eef8;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 0 10px #7c5cff;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background: #7c5cff;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #5a3bcc;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="./../../index.php" class="home-button">Anasayfaya Dön</a>
+
+    <form class="contact-form">
+        <h2>İletişim Formu</h2>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+
+        <label for="email">E-posta</label>
+        <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+
+        <label for="subject">Konu</label>
+        <input type="text" id="subject" name="subject" placeholder="Konu" required>
+
+        <label for="message">Mesaj</label>
+        <textarea id="message" name="message" placeholder="Mesajınızı yazın" required></textarea>
+
+        <button type="submit">Gönder</button>
+    </form>
+
+</body>
+</html>

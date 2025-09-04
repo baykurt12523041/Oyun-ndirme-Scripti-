@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sosyal Medya Bağlantıları</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f1724;
+            font-family: 'Arial', sans-serif;
+            color: #e6eef8;
+            overflow-x: hidden;
+        }
+
+        /* Menüye Dön Butonu */
+        .back-button {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            padding: 12px 20px;
+            background: #7c5cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background-color: #5a3bcc;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            height: 100vh;
+        }
+
+        .social-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+        }
+
+        .social-icon svg {
+            width: 50px;
+            height: 50px;
+            fill: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon.telegram:hover svg { fill: #0088cc; }
+        .social-icon.youtube:hover svg { fill: #ff0000; }
+        .social-icon.facebook:hover svg { fill: #1877f2; }
+        .social-icon.x:hover svg { fill: #1da1f2; }
+    </style>
+</head>
+<body>
+
+    <a href="./../../index.php" class="back-button">Anasayfaya Dön</a>
+
+    <div class="container">
+        <!-- Telegram -->
+        <a href="https://t.me/yourusername" class="social-icon telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+                <path d="M120 0C53.73 0 0 53.73 0 120s53.73 120 120 120 120-53.73 120-120S186.27 0 120 0zm57.32 84.55l-16.1 75.88c-1.22 5.34-4.38 6.63-8.86 4.15l-24.45-18.04-11.8 11.36c-1.3 1.3-2.38 2.38-4.35 2.38l1.55-22.02 39.95-36.1c1.74-1.55-.38-2.42-2.7-.87l-49.48 31.3-21.32-6.66c-4.62-1.44-4.7-4.62.97-6.84l83.64-32.25c3.86-1.48 7.22 0.93 5.9 6.06z"/>
+            </svg>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/channel/yourchannel" class="social-icon youtube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M549.655 124.083c-6.281-23.65-24.848-42.187-48.548-48.547C456.486 64 288 64 288 64s-168.486 0-213.108 11.536c-23.7 6.36-42.267 24.896-48.548 48.547C16 168.486 16 256 16 256s0 87.514 10.344 131.917c6.281 23.65 24.848 42.187 48.548 48.547C119.514 448 288 448 288 448s168.486 0 213.108-11.536c23.7-6.36 42.267-24.896 48.548-48.547C560 343.514 560 256 560 256s0-87.514-10.345-131.917zM232 336V176l142 80-142 80z"/>
+            </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/yourprofile" class="social-icon facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06H293V6.26S271.69 0 248.36 0c-73.15 0-121.14 44.38-121.14 124.72v70.62H85.69V288h41.53v224h100.17V288z"/>
+            </svg>
+        </a>
+
+        <!-- X -->
+        <a href="https://x.com/yourusername" class="social-icon x">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M512 97.2c0-53.5-43.5-97.2-97.2-97.2H97.2C43.5 0 0 43.5 0 97.2v317.6C0 468.5 43.5 512 97.2 512h317.6c53.5 0 97.2-43.5 97.2-97.2V97.2zM345.4 345.4c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 289.4l-49.8 49.8c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l49.8-49.8-49.8-49.8c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l49.8 49.8 49.8-49.8c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17l-49.8 49.8 49.8 49.8z"/>
+            </svg>
+        </a>
+    </div>
+
+</body>
+</html>
