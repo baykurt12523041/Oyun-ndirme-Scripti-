@@ -1,0 +1,34 @@
+ADIM ADIM YAPACAĞINIZ İŞLEMLERİ SİZLERE ANLATIYIM ZOR BİR ŞEYİ YOKTUR SADECE ANLAMAK VE OKUMAK ÖNEMLİDİR
+
+	//////// sadece bu script itemhesap.com üzerinde satış yapılmaktadır/////
+
+
+1- İNDEX.PHP DOSYASINI AÇIP "<title>SİTENİN ADI BURAYA GİRİLECEK</title>" BU KISIMDA SİTENİN ADINI DÜZENLEYECEKSİNİZ
+
+2-favicon.ico görseliniz elinizda varsa ve hazırsa kök klasörde assets klasörüne göreseli oraya atınız
+
+3- includes klasörüne giriniz ve gerekli veritaban bağlantısını yapınız
+
+4-navbardaki site logosunu site adını ve menüleri tek tek ayarlar menüsünden yapabilirsiniz.
+
+5- herhangi bir sayfa ekleyecek olursanız kök klasörde sayfalar dosyası var oraya sayfalarınızı 
+koyabilirsiniz .html türünde olursa iyi olur 
+
+6- schema.sql dosyasını veritabında girip içeri aktar deyip sql dosyasını seçin uğraşmadan 
+tablolar yüklenip gerekli veritaban bağlantılarında girerek siteniz hazır olacaktır
+
+7- login.php de 
+Sabit kullanıcı bilgileri
+    $valid_user = "kullanıcı1";
+    $valid_pass = "68684040";
+bu bilgileri düzenleyiniz çünkü admin paneline ulaşmak için 
+
+
+
+
+
+ARTIŞ HER ŞEY HAZIR 
+
+
+
+
